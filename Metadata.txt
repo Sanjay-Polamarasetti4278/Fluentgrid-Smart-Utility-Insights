@@ -1,0 +1,102 @@
+Smart Utility Insights - Metadata
+
+This file contains all the meta information regarding the columns described in the CSV files. We have provided 4 CSV files:
+
+1.energy_consumption.csv
+
+2.energy_demand_prediction.csv
+
+3.ami_anomaly_detection.csv
+
+4.billing_complaints.csv
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Column Description for energy_consumption.csv
+This table contains information about the resource consumption (electricity, water, gas) by customers, tracked by meters.
+
+Customer_ID: Unique identifier for each customer
+
+Customer_Name: Name of the customer
+
+Region: Geographic zone (e.g., East, West, North) where the customer is located
+
+Meter_ID: Unique ID assigned to each utility meter
+
+Electricity_kWh: Electricity consumed in kilowatt-hours
+
+Water_Cubic_Meters: Water consumed in cubic meters
+
+Gas_Therms: Gas consumed in therms
+
+Timestamp: Date when the consumption was recorded
+
+Month: The name of the month corresponding to the timestamp
+------------------------------------------------------------------------------------------------------------------------------------
+
+Column Description for energy_demand_prediction.csv
+This table includes past, current, and forecasted energy consumption for each customer, helping in demand prediction.
+
+Customer_ID: Unique identifier for each customer
+
+Customer_Name: Name of the customer
+
+Region: Customer’s geographical region
+
+Past_Consumption_kWh: Previous period’s electricity usage in kWh
+
+Current_Consumption_kWh: Present electricity consumption in kWh
+
+Predicted_Consumption_kWh: Predicted electricity usage based on past and current consumption
+
+Timestamp: Date of data record
+
+Month: The month of the record
+------------------------------------------------------------------------------------------------------------------------------------
+
+Column Description for ami_anomaly_detection.csv
+This table captures anomaly events identified from AMI (Advanced Metering Infrastructure) data.
+
+Customer_ID: Unique identifier for each customer
+
+Customer_Name: Name of the customer
+
+Region: Location of the customer
+
+Meter_ID: Meter from which consumption was recorded
+
+Consumption_kWh: Electricity consumption at the time of anomaly detection
+
+Anomaly_Type: Type of anomaly detected (e.g., Faulty Meter, Energy Theft, Normal)
+
+Timestamp: Date and time when anomaly was detected
+
+Month: Month of the anomaly detection
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Column Description for billing_complaints.csv
+This table tracks billing amounts, payment statuses, and complaints logged by customers.
+
+Customer_ID: Unique identifier for each customer
+
+Customer_Name: Name of the customer
+
+Region: Region in which the customer resides
+
+Meter_ID: Utility meter associated with the customer
+
+Billing_Amount: Total amount billed to the customer
+
+Payment_Status: Indicates whether the bill was paid or is pending
+
+Complaint_Registered: Whether a complaint was registered ("Yes" or "No")
+
+Complaint_Type: Type of complaint (e.g., Power Outage, Not Available)
+
+Complaint_Status: Status of the complaint (e.g., Pending, Not Available)
+
+Timestamp: Date on which the billing/complaint was recorded
+
+Month: The name of the month extracted from the timestamp
+
+
+
